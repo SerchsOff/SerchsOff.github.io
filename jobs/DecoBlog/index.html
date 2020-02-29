@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>verst</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Hind|Montserrat&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="head__inner">
+				<nav class='icon' id="menu_icon" type="button" ><img src="images/Menu_icon.png" alt="">
+					
+				</nav>
+				<a class='decoblog' href="#"><span class='deco'>deco</span>blog</a>
+				<div class="naw">
+					<a class='icon' href="#"><img src="images/rss.png" alt=""></a>
+				<a class='icon' href="#"><img src="images/twitter.png" alt=""></a>
+				<a class='icon' href="#"><img src="images/tambler.png" alt=""></a>
+				<a class='icon' href="#"><img src="images/facebook.png" alt=""></a>
+				<a class='icon' href="#"><img src="images/search.png" alt=""></a>
+				</div>
+			</div>
+			<div class="menu">
+				<div class="menu-item about">About</div>
+				<div class="menu-item contact">Contact</div>
+			</div>
+		</header>
+	</div>
+	<div class="wrapper">
+		<main>
+			<article class="news">
+				<div class="news__post">
+					<img class="news__bg" src="images/news.png" alt="1 slide">
+					<div class="news__history">
+						<p class='latest__news'>Letest News1</p>
+						<h2 class='news__title'>bodybulding best for you health</h2>
+					</div>
+				</div>
+
+				<div class="news__post">
+					<img class="news__bg" src="images/news.png" alt="1 slide">
+					<div class="news__history">
+						<p class='latest__news'>Letest News2</p>
+						<h2 class='news__title'>bodybulding best for you health</h2>
+					</div>
+				</div>
+
+				<div class="news__post">
+					<img class="news__bg" src="images/news.png" alt="1 slide">
+					<div class="news__history">
+						<p class='latest__news'>Letest News3</p>
+						<h2 class='news__title'>bodybulding best for you health</h2>
+					</div>
+				</div>
+				
+
+				<div class="news__slider">
+					<div class="slider__dots">
+						<div class="slide"></div>
+						<div class="slide"></div>
+						<div class="slide"></div>
+					</div>
+					<div class="control__slide">
+						<div class="prev" onclick="minusSlide()">
+							<div class="arrow_square-left"></div>
+							<div class="arrow_basis"></div>
+							
+						</div>
+						<div class="slide-text">featured article</div>
+						<div class="next" onclick="plusSlide()">
+							<div class="arrow_basis"></div>
+							<div class="arrow_square-right"></div>
+						</div>
+					</div>
+				</div>
+				
+			</article>
+			<article class='subscribe'>
+				<div class="sub__title">signup to newsletter</div>
+				<form method="GET" action="index.html">
+					<input class="name" name="name" placeholder="your name:" type="text"/>
+					<input class="email" name="email" placeholder="your email addres:" type="text"/>
+					<button class="sub__btn" type="submit" name="submit">subscribe now</button>
+				</form>
+			</article>
+			<article class='content'>
+				<div class="colomn">
+					<div class="item element">
+						<img class='item__icon' src="images/pansil.png" alt="icon">
+						<div class="colomn__title">travalling</div>
+						<div class="colomn__name">travel best adventure</div>
+						<div class="colomn__date">january 25,2016</div>
+						<div class="colomn__text">Lorem ipsum doloirs sit amet, csatetur adipisicin, sed does eiusmod tehampor incididunt uts laboasre et dolhvaliqua. Ut enim  vem, nostrasuaations ullamco labiosi ut saaliquip exoi asea comoodo Disco choice is the have great work.</div>
+						<button class='read'>read more</button>
+						<div class="comment">
+							<img src="images/comment.png" alt="icon">
+							<div class="comment__text">no comment</div>
+							<div class="social">
+								<a href='#'><img src="images/bol.png" alt="bol"></a>
+								<a href='#'><img src="images/social_facebook.png" alt="facebook"></a>
+								<a href='#'><img src="images/social_twitter.png" alt="twitter"></a>
+								<a href='#'><img src="images/social_p.png" alt="p"></a>
+							</div>
+						</div>
+					</div><!-- element -->
+
+					<div class="photo element"></div>
+
+					<div class="item element item_bg">
+						<img class='item__icon' src="images/pansil.png" alt="icon">
+						<div class="colomn__title">travalling</div>
+						<div class="colomn__name">travel best adventure</div>
+						<div class="colomn__date">january 25,2016</div>
+						<div class="colomn__text">Lorem ipsum doloirs sit amet, csatetur adipisicin, sed does eiusmod tehampor incididunt uts laboasre et dolhvaliqua. Ut enim  vem, nostrasuaations ullamco labiosi ut saaliquip exoi asea comoodo Disco choice is the have great work.</div>
+						<button class='read'>read more</button>
+					</div><!-- element -->
+				</div><!-- colomn -->
+
+				<div class="colomn">
+					<div class="element">
+						<div class=item__photo></div>
+
+						<div class="item">
+						<img class='item__icon' src="images/image.png" alt="icon">
+						<div class="colomn__title">travalling</div>
+						<div class="colomn__name">standart image post</div>
+						<div class="colomn__date">january 25,2016</div>
+						<button class='read'>read more</button>
+						<div class="comment">
+							<img src="images/comment.png" alt="icon">
+							<div class="comment__text">no comment</div>
+							<div class="social">
+								<a href='#'><img src="images/bol.png" alt="bol"></a>
+								<a href='#'><img src="images/social_facebook.png" alt="facebook"></a>
+								<a href='#'><img src="images/social_twitter.png" alt="twitter"></a>
+								<a href='#'><img src="images/social_p.png" alt="p"></a>
+							</div>
+						</div><!-- comment -->
+					</div><!-- element -->
+				</div><!-- colomn -->
+
+					<div class="element black__item item">
+						<img class='item__icon white__icon' src="images/citata.png" alt="icon">
+						<div class="colomn__text">Lorem ipsum doloirs sit amet, csatetur adipisicin, sed does eiusmod tehampor incididunt uts laboasre et dolhvaliqua. Ut enim  vem, nostrasuaations ullamco labiosi ut saaliquip exoi asea comoodo Disco choice is the have great work.</div>
+						<div class="colomn__autor">nathalia alexy</div>
+					</div><!-- element -->
+					<div class="element">
+						<img class='item__icon element__icon' src="images/video.png" alt="icon">
+						<iframe margin='0' width="100%" height="255" src="https://www.youtube.com/embed/FDEx5Cp8QJ8" frameborder="0" allowfullscreen></iframe>
+
+						<div class="item item__plus">
+							<div class="colomn__title">disigner</div>
+							<div class="colomn__name">video image post style</div>
+							<div class="colomn__date">january 25,2016</div>
+							<div class="colomn__text">Lorem ipsum doloirs sit amet, csatetur adipisicin, sed does eiusmod tehampor incididunt uts laboasre et dolhvaliqua.</div>
+							<div class="comment">
+								<img src="images/comment.png" alt="icon">
+								<div class="comment__text">no comment</div>
+								<div class="social">
+									<a href='#'><img src="images/bol.png" alt="bol"></a>
+									<a href='#'><img src="images/social_facebook.png" alt="facebook"></a>
+									<a href='#'><img src="images/social_twitter.png" alt="twitter"></a>
+									<a href='#'><img src="images/social_p.png" alt="p"></a>
+								</div>
+							</div>
+						</div><!-- item -->
+					</div><!-- element -->
+				</div><!-- colomn -->
+				
+				<div class="colomn">
+					<div class="item element">
+						<img class='item__icon' src="images/pansil.png" alt="icon">
+						<div class="colomn__title">fashion</div>
+						<div class="colomn__name">simple post style</div>
+						<div class="colomn__date">january 02,2016</div>
+						<div class="colomn__text">Lorem ipsum doloirs sit amet, csatetur adipisicin, sed does eiusmod tehampor incididunt uts laboasre et dolhvaliqua.</div>
+						<button class='read'>read more</button>
+						<div class="comment">
+							<img src="images/comment.png" alt="icon">
+							<div class="comment__text">no comment</div>
+							<div class="social">
+								<a href='#'><img src="images/bol.png" alt="bol"></a>
+								<a href='#'><img src="images/social_facebook.png" alt="facebook"></a>
+								<a href='#'><img src="images/social_twitter.png" alt="twitter"></a>
+								<a href='#'><img src="images/social_p.png" alt="p"></a>
+							</div>
+						</div>
+					</div><!-- element -->
+					<div class="shadow element">
+						<div class="element__shadow"></div>
+
+						<div class="element__content">
+							<div class=item__photo></div>
+
+							<div class="item item__plus">
+								<img class='item__icon' src="images/image.png" alt="icon">
+								<div class="colomn__title">adventures</div>
+								<div class="colomn__name">awersome gallery post</div>
+								<div class="colomn__date">january 19,2016</div>
+								<button class='read read__gallery'>read more</button>
+								<div class="comment">
+									<img src="images/comment.png" alt="icon">
+									<div class="comment__text">no comment</div>
+									<div class="social">
+										<a href='#'><img src="images/bol.png" alt="bol"></a>
+										<a href='#'><img src="images/social_facebook.png" alt="facebook"></a>
+										<a href='#'><img src="images/social_twitter.png" alt="twitter"></a>
+										<a href='#'><img src="images/social_p.png" alt="p"></a>
+									</div>
+								</div><!-- comment -->
+							</div><!-- item -->
+						</div><!-- element__content -->
+					</div><!-- shadow, element -->
+
+					<div class="item black__item element">
+						<img class='item__icon white__icon' src="images/url.png" alt="icon">
+						<a href='#'><div class="colomn__text">http://www.abcdomainname.com/screen/discovery</div></a>
+					</div><!-- item -->
+
+					<div id="black__item" class="photo__black element">
+						<img class='item__icon white__icon' src="images/cvadrats.png" alt="icon">
+					</div>
+				</div><!-- colomn -->
+
+				<div class="colomn">
+					<div class="photo element"></div>
+
+					<div class="item item__mb-50">
+						<img class='item__icon' src="images/pansil.png" alt="icon">
+						<div class="colomn__title">lifestyle</div>
+						<div class="colomn__name">without image post</div>
+						<div class="colomn__date">january 07,2016</div>
+						<div class="colomn__text">Lorem ipsum doloirs sit amet, csatetur adipisicin, sed does eiusmod tehampor incididunt uts laboasre et dolhvaliqua. Ut enim  vem, nostrasuaations ullamco labiosi ut saaliquip exoi asea comoodo Disco choice is the have great work.</div>
+						<button class='read'>read more</button>
+						<div class="comment">
+							<img src="images/comment.png" alt="icon">
+							<div class="comment__text">no comment</div>
+							<div class="social">
+								<a href='#'><img src="images/bol.png" alt="bol"></a>
+								<a href='#'><img src="images/social_facebook.png" alt="facebook"></a>
+								<a href='#'><img src="images/social_twitter.png" alt="twitter"></a>
+								<a href='#'><img src="images/social_p.png" alt="p"></a>
+							</div>
+						</div>
+					</div><!-- element -->
+
+					<div class="item element item__music">
+						<img class='item__icon' src="images/music.png" alt="icon">
+						<div class="colomn__title">audio music</div>
+						<div class="colomn__name">best audio player post</div>
+						<div class="colomn__date">december 29,2015</div>
+						<img class='item__avatar' src="https://placehold.it/135x135" alt="avatar">
+					</div><!-- element -->
+				</div><!-- colomn -->
+			</article>
+		</main>
+	</div>
+		<footer>
+			<div class="footer__block">
+				<div class='block__title'>about blog</div>
+				<div class="block__text">Lorem ipsum dolor sit amet, conser adipisicing esse cillum dolore nulla pariatur.</div>
+				<div class="autograf-bg">
+					<img class='autograf' src="images/autograf.png" alt="autograf">
+				</div>
+			</div>
+			<div class="footer__block">
+				<div class='block__title'>latest tweets</div>
+				<div class="tweet">
+					<img class='twitter__icon' src="images/twitter.png" alt="twetter"/>
+					<div class="tweet__name">@Twitter@magicalrebekah</div>
+					<div class="tweet__text">Developer Advocate @heyval isaiyou knows the very well is about things .</div>
+				</div><!-- tweet -->
+				
+				<div class="tweet">
+					<img class='twitter__icon' src="images/twitter.png" alt="twetter"/>
+					<div class="tweet__name">@Twitter@magicalrebekah</div>
+					<div class="tweet__text">Developer Advocate @heyval isaiyou knows the very well is about things .</div>
+				</div><!-- tweet -->
+			</div>
+			<div class="footer__block">
+				<div class='block__title'>follow me instagram</div>
+				<div class="instagram">
+					<a class='instagram__item' href="#">
+						<img src="images/inst-item.png" alt="inst">
+					</a>
+					<a class='instagram__item' href="#">
+						<img src="images/inst-item.png" alt="inst">
+					</a>
+					<a class='instagram__item' href="#">
+						<img src="images/inst-item.png" alt="inst">
+					</a>
+					<a class='instagram__item' href="#">
+						<img src="images/inst-item.png" alt="inst">
+					</a>
+					<a class='instagram__item' href="#">
+						<img src="images/inst-item.png" alt="inst">
+					</a>
+					<a class='instagram__item' href="#">
+						<img src="images/inst-item.png" alt="inst">
+					</a>
+				</div>
+			</div>
+			<div class="footer__block">
+				<div class='block__title'>latest comment</div>
+				<div class="last-comment">
+					<div class="last-comment__name">From Alex:</div>
+					<div class="last-comment__text">Developer Advocate @heyval isaiyou know the very well is talking about things .</div>
+					<hr/>
+				</div>
+				<div class="last-comment">
+					<div class="last-comment__name">From Jhon Doe:</div>
+					<div class="last-comment__text">Developer Advocate @heyval isaiyou know the very well is talking about things .</div>
+				</div>
+			</div>
+		</footer>
+		<div class="copyright">
+			<div class="copyright__text">@2015 copyright .all right reserved by awesome theme</div>
+			<a href="#"><div class="policy">terms policy</div></a>
+			<a href="#"><div class="disclaimer">disclaimer</div></a>
+		</div>
+		<script type="text/javascript" src="script.js"></script>
+		<script type="text/javascript" src="alert.js"></script>
+</body>
+</html>
