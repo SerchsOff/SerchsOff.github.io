@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>portfolio</title>
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="description" content="Сайт портфолио верстальщика Сергея Рогова">
+	<meta name="Keywords" content="профолио, верстальщик, frond-end, HTML, CSS, Javascript">
+</head>
+<body onload="scroll()">
+	<header>
+		<div class="wrapper">
+			<div class="head__inner">
+				<a href="#top" class="head__elem">Главная</a>
+				<a href="#jobs" class="head__elem">Портфолио</a>
+				<a href="#skils" class="head__elem">Навыки</a>
+				<a href="#contact" class="head__elem">Контакты</a>
+			</div>
+		</div>
+	</header>
+	<main>
+		<article class="main__elem about" id="top">
+			<div class="wrapper">
+				<div class="about__inner">
+					<div class="about-Me">
+						<div class="name">Привет, меня зовут <span>Сергей Рогов </span><br/>Я - Frond-end разработчик сайтов</div>
+						<div class="discr">На этом сайте вы найдёте мои специализации и примеры моих работ</div>
+					</div>
+					<a href="#jobs" class="scroll__inner">
+						<div class="scroll"></div>
+					</a>
+				</div>	
+			</div>
+		</article>
+		<article class="main__elem" id="jobs">
+			<div class="wrapper">
+				<h1 class="title">Мои работы</h1>
+				<div class="jobs__inner">
+					<div class="job">
+						<a href="jobs/DecoBlog/index.html"><div class="job__img">
+							<img src="jobs/DecoBlog/preview.jpg" alt="">
+							<div class="job__view"><img src="images/search.png"></img></div>
+						</div></a>
+						<div class="job__info">
+							<div class="job__name"><a href="jobs/DecoBlog/index.html">DecoBlog</a></div>
+							<div class="job__discr">Разработка: Html,Css,Javascript + Адаптивность</div>
+							<div class="job__date">10.11.2019</div>
+						</div>
+					</div>
+					<div class="job">
+						<a href="jobs/Mogo/index.html"><div class="job__img">
+							<img src="jobs/Mogo/preview.jpg" alt="">
+							<div class="job__view"><img src="images/search.png"></img></div>
+						</div></a>
+						<div class="job__info">
+							<div class="job__name"><a href="jobs/Mogo/index.html">MoGo</a></div>
+							<div class="job__discr">Разработка: Html,Css,Javascript + Адаптивность</div>
+							<div class="job__date">11.09.2019</div>
+						</div>
+					</div>
+					<div class="job">
+						<a href="jobs/Programming/index.html"><div class="job__img">
+							<img src="jobs/Programming/preview.jpg" alt="">
+							<div class="job__view"><img src="images/search.png"></img></div>
+						</div></a>
+						<div class="job__info">
+							<div class="job__name"><a href="jobs/Programming/index.html">Programming</a></div>
+							<div class="job__discr">Разработка: Html,Css,Javascript + Адаптивность</div>
+							<div class="job__date">20.12.2019</div>
+						</div>
+					</div>
+					<div class="job">
+						<a href="jobs/Activebox/index.html"><div class="job__img">
+							<img src="jobs/Activebox/preview.jpg" alt="">
+							<div class="job__view"><img src="images/search.png"></img></div>
+						</div></a>
+						<div class="job__info">
+							<div class="job__name"><a href="jobs/Activebox/index.html">Activebox</a></div>
+							<div class="job__discr">Разработка: Html,Css + Адаптивность</div>
+							<div class="job__date">30.12.2019</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+		<article class="main__elem skils" id="skils">
+			<div class="wrapper">
+				<h1 class="title">Мои навыки</h1>
+				<div class="skils__inner">
+					<div class="skils__elem">
+						Мои знания HTML-CSS-JavaScript позволят качественно, красиво и функционально оформить ваш сайт
+					</div>
+					<div class="skils__elem">
+						Вёрстка в Pixel Perfect позволит вашему сайту выглядеть точь в точь как на макете
+					</div>
+					<div class="skils__elem">
+						Возможность добавление адаптивности - ваш сайт будет выглядеть красиво на всех устройствах.
+					</div>
+				</div>
+			</div>
+		</article>
+		<article class="main__elem" id="contact">
+			<div class="wrapper">
+				<div class="title">Связаться со мной</div>
+				<form class="form" action="send.php" method="POST">
+					<input type="text" class="name form__elem" name="name" placeholder="Ваше имя" required>
+					<input type="text" class="email form__elem" name="email" placeholder="Ваш email" required>
+					<input type="text" class="message form__elem" name="message" placeholder="Сообщение" required>
+					<input class="form__btn" type="submit" placeholder="Отправить">
+				</form>
+			</div>
+		</article>
+	</main>
+	<footer>
+		<div class="wrapper main__elem">
+			<div class="footer__inner">
+				<div class="footer__elem">
+					<div class="footer__title">Контакты</div>
+					<ul class="contact">
+						<li><span>Email:</span> serchsoff@gmail.com</li>
+						<li><span>Skype:</span> Serch_s</li>
+					</ul>
+				</div>
+				<div class="footer__elem">
+					<div class="footer__title">Соцсети</div>
+					<div class="social">
+						<div class="social__elem">
+							<a href="https://vk.com/serchsoff">
+								<div class="social__img"><img src="images/Vk.jpg" alt=""></div>
+							</a>
+						</div>
+						<div class="social__elem">
+							<a href="https://instagram.com/sergey_sr">
+								<div class="social__img"><img src="images/Instagram.jpg" alt=""></div>
+							</a>
+						</div>
+						<div class="social__elem">
+							<a href="https://github.com/SerchsOff">
+								<div class="social__img"><img src="images/Github.jpg" alt=""></div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
