@@ -1,0 +1,353 @@
+body {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size:15px;
+	line-height:1.6;
+	color:#333;
+	margin:0px;
+}
+
+html {
+	scroll-behavior: smooth
+}
+
+* {
+	box-sizing:border-box;
+}
+
+h1, h2, h3 ,h4 ,h5 ,h6 {
+	margin:0;
+}
+
+a {
+	text-decoration:none;
+	color:inherit;
+}
+
+ul {
+	list-style-type:none;
+	padding:0;
+}
+
+/* wrapper */
+.wrapper {
+	margin:0 150px;
+}
+
+/* header */
+header {
+	background:initial;
+	position:absolute;
+	z-index:1000;
+	color:#fff;
+	width:100%;
+}
+
+.head__inner {
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	height:70px;
+}
+
+.head__elem {
+	font-size:19px;
+	font-weight:500;
+	padding:5px 15px;
+}
+.head__elem:hover {
+	transition:0.3s ease;
+	background:#fff;
+	color:#000;
+	border-radius:5px;
+}
+
+/* main */
+.main__elem {
+	padding:50px 0;
+}
+
+/* about */
+.about {
+	background:url(../images/intro.jpg) center no-repeat;
+	background-size:cover;
+	color:#fff;
+}
+
+.about__inner {
+	height:87vh;
+	display:flex;
+	position:relative;
+	align-items:center;
+}
+
+.about-Me {
+	display:grid;
+	margin:0 auto;
+	grid-template-rows:60% 40%;
+	font-size:30px;
+	font-weight:500;
+}
+.name {
+	text-align:center;
+}
+.name span {
+	font-size:35px;
+	font-weight:600;
+}
+.name:after {
+	content:"";
+	display:block;
+	margin:20px 0;
+	height:4px;
+	background:#fff;
+}
+
+.discr {
+	display:flex;
+	align-items:center;
+	font-size:28px;
+}
+
+.scroll__inner {
+	position:absolute;
+	display:flex;
+	align-items:center;
+	bottom:0;
+	height:50px;
+	width:50px;
+	left:50%;
+	transform:translateX(-50%);
+}
+
+.scroll {
+	height:3px;
+	width:35px;
+	transition:transform 1s linear;
+}
+.scroll:before, .scroll:after {
+	content:"";
+	position:absolute;
+	height:4px;
+	width:56%;
+	background: #fff;
+}
+.scroll:before {
+	left:0;
+	transform:rotate(30deg);
+}
+.scroll:after {
+	right:0;
+	transform:rotate(-30deg);
+}
+
+/* title */
+.title {
+	font-size:33px;
+	font-weight:600;
+	text-align:center;
+	color:#3e3e3e;
+	padding-bottom:50px;
+}
+
+.title:after {
+	content:"";
+	display:block;
+	width:110px;
+	height:3px;
+	margin:5px auto;
+	background: #000;
+}
+
+/* skils */
+.skils {
+	background: #18bc9c;
+	color:#fff;
+}
+.skils .title {
+	color:#fff;
+}
+.skils .title:after {
+	background: #fff;
+}
+
+.skils__inner {
+	display:flex;
+	justify-content:space-between;
+	width:100%;
+}
+
+.skils__elem {
+	width:30%;
+	font-size:18px;
+}
+
+/* jobs */
+.jobs__inner {
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+
+.job {
+	width:31%;
+	margin-bottom:20px;
+	background:#fff;
+	border-radius:4px;
+	overflow:hidden;
+	box-shadow:0 0 5px black;
+}
+
+.job__img {
+	width:100%;
+	height:230px;
+	background: #18bc9c;
+	position:relative;
+	transition: transform 1s linear;
+	box-shadow:0 0 5px #000;
+}
+.job__img img {
+	width:100%;
+	height:100%;	
+}
+.job__img:hover img {
+	opacity: .3;
+}
+.job__img:hover .job__view {
+	opacity:1;
+	z-index:2;
+}
+
+.job__view {
+	position:absolute;
+	width:50px;
+	height:50px;
+	top:50%;
+	left:50%;
+	transform:translate3d(-50%, -50%, 0);
+	opacity:0;
+}
+.job__view img {
+	width:100%;
+	height:100%;
+}
+
+
+/* job info */
+.job__info {
+	text-align:center;
+	padding:20px;
+}
+
+.job__info * {
+	margin-bottom:8px;
+}
+
+.job__name {
+	font-size:19px;
+	font-weight:600;
+}
+
+.job__discr {
+	color:gray;
+}
+
+.job__date {
+	font-weight:600;
+}
+
+/* form */
+.form {
+	width:800px;
+	margin:auto;
+
+}
+
+.form__elem {
+	width:100%;
+	height:85px;
+	padding:5px;
+	outline:none;
+	font-size:20px;
+	border:none;
+	border-bottom:1px solid #eee;
+}
+
+.form__btn {
+	width:120px;
+	height:50px;
+	margin-top:20px;
+	border:none;
+	border-radius:5px;
+	color:#fff;
+	cursor:pointer;
+	font-size:17px;
+	background: #18bc9c;
+}
+
+.message {
+	height:150px;
+}
+
+/* footer */
+footer {
+	background: #303030;
+	color:#999;
+}
+
+.footer__inner {
+	display:flex;
+}
+
+.footer__elem {
+	width:50%;
+}
+
+.footer__title {
+	font-size:19px;
+	font-weight:600;
+	color:#fff;
+	margin-bottom:10px;
+}
+
+/* social */
+.social {
+	display:flex;
+}
+
+.social__elem {
+	width:50px;
+	height:50px;
+	margin-right:15px;
+}
+
+.social__img {
+	width:100%;
+	height:100%;
+	background: #fff;
+	border-radius:50%;
+	padding:10px;
+}
+
+.social__img img {
+	width:100%;
+	height:100%;
+}
+
+.contact span {
+	color:#fff;
+	font-size:17px;
+}
+
+/* media */
+@media (min-width:2300px) {
+	.job {
+		width:21%;
+		margin-bottom:40px;
+	}
+}
+
+@media (max-width:1200px) {
+	.job {
+		width:46%;
+	}
+}
