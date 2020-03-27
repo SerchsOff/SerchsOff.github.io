@@ -299,7 +299,6 @@ header {
 }
 
 .form__btn {
-	width:120px;
 	height:50px;
 	margin-top:20px;
 	border:none;
@@ -308,6 +307,7 @@ header {
 	cursor:pointer;
 	font-size:17px;
 	background: #18bc9c;
+	padding:0 12px;
 }
 
 .message {
