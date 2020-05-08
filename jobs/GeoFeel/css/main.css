@@ -1,0 +1,223 @@
+body {
+	padding:0;
+	margin:0;
+	font-size:17px;
+	font-family: 'Roboto', sans-serif;
+}
+
+* {
+	box-sizing:border-box;
+	margin:0;
+}
+
+a {
+	text-decoration:none;
+	color:inherit;
+}
+
+ul, li {
+	padding:0;
+	list-style:none;
+}
+
+/* header */
+
+header,
+footer {
+	background: #000;
+	padding:0.3rem 2.5rem;
+	display:flex;
+	justify-content:space-between;
+	color:#fff;
+	height: 60px;
+}
+
+.logo {
+	display:flex;
+	align-items:center;
+	height: 100%;
+	width: 14%;	
+}
+.logo img {
+	max-width:100%;
+	max-height:100%;
+}
+
+.profile {
+	display:flex;
+	height: 100%;
+	text-transform:uppercase;
+	align-items:center;
+	justify-content:center;
+	font-size:1.5rem;
+	font-weight:bold;
+}
+
+/* main */
+main {
+	padding:1rem 9rem;
+	background:#f9f6f3;
+}
+
+article {
+	margin-top:1.5rem;
+}
+article:first-child {
+	margin:0;
+}
+
+.game,
+.discrGame,
+.donateGame {
+	display:flex;
+	justify-content:space-between;
+	background: #fff;
+	border-radius:7px;
+}
+
+/* game */
+.game__title-block {
+	width: 45%;
+	padding:4rem 1rem;
+}
+.game__title-block h1 {
+	font-size:2.5rem;
+	margin-bottom:2rem;
+}
+article p {
+	font-size:19px;
+	max-width:600px;
+}
+
+.game__start {
+	width: 55%;
+	display:flex;
+	justify-content:flex-start;
+	align-items:center;
+	background:url(../images/earth.png) center no-repeat;
+	background-size:cover;
+}
+.btn__start {
+	width:35%;
+	text-decoration:none;
+	color:#fff;
+	font-size:18px;
+	padding:0.6rem 0;
+	border-radius:15px;
+	background:#2AB745;
+	display:block;
+	text-align:center;
+	margin-left:2rem;
+}
+
+/* discrGame */
+.discrGame .game__title-block {
+	margin:auto 0;
+	padding:2rem 1rem;
+}
+
+.discrGame h1 {
+	font-size:2rem;
+	margin-bottom:1rem;
+}
+
+.discrGame p {
+	margin-bottom:1rem;
+}
+.discrGame p:last-child {
+	margin:0;
+}
+
+.game__title-block li {
+	padding-left:1rem;
+	margin-bottom:1rem;
+}
+
+.discrGame__img {
+	width: 55%;
+	display:flex;
+	justify-content:center;
+	text-align:center;
+}
+.discrGame__img img {
+	height: 100%;
+}
+/* donate */
+.donate_btn {
+	font-size:1.6rem;
+	font-weight:bold;
+}
+.donate {
+	width: 100%;
+	height: 100%;
+	z-index:10;
+	display:;
+}
+.donate iframe {
+
+}
+
+/* footer */
+footer {
+	height: auto;
+	padding:2rem 3rem;
+}
+
+.footer__block {
+	width: 45%;
+}
+.footer__block h2:after {
+	content:"";
+	display:block;
+	height: 1px;
+	width: 100%;
+	background:gray;
+	margin:9px 0;
+}
+
+.footer__block li {
+	margin:0.5rem 0;
+}
+
+@media(max-width: 900px){
+	main {
+		padding:1rem 3rem;
+	}
+
+	.game,
+	.discrGame,
+	.donateGame {
+		display:block;
+		background: #fff;
+		border-radius:7px;
+	}
+
+	.discrGame__img {
+		display:none;
+	}
+
+	.game__title-block {
+		width: 100%;
+	}
+
+	.game__start {
+		width: 100%;
+		padding:2rem 0;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		background:url(../images/earth.png) center no-repeat;
+		background-size:cover;
+	}
+
+	.donate {
+		display:flex;
+		width: 100%;
+	}
+}
+
+@media(max-width: 500px){
+	main {
+		padding:1rem 1rem;
+	}
+}
